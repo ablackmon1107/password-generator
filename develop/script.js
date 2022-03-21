@@ -24,4 +24,47 @@ uppercaseArray [1]
   var uppercaseletters  = confirm (" Would you like uppercase letters in your password?");
   var lowercaseletters = confirm ("Would you like lowercase letters in your password?");
   var specialcharacters = confirm ("Would you like special characters in your password?");
+//When I answer each prompt, then my input should be validated and at least one character type should be selected
+if (numbers){
+  resultArray = resultArray.concat(numbArray);
+  
+}
 
+if (uppercaseletters){
+  resultArray = resultArray.concat(uppercaseArray);
+
+}
+
+if (lowercaseletters){
+  resultArray = resultArray.concat(lowercaseArray);
+
+}
+
+if (specialcharacters){
+  resultArray = resultArray.concat(characterArray);
+}
+
+//When all prompts are answered, then a password is generated that matches the selected criteria
+
+for (var i = 0; i < numCharacter; i++) {
+      
+  userArray.push (resultArray[Math.floor(Math.random() * resultArray.length)]); 
+  }
+
+  return userArray.join("") ;
+}
+
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+}
+//When the password is generated, then the password is either displayed in an alert or written to the page
+
+function copyToClipboard() {
+ 
+}
+
+generateBtn.addEventListener("click", writePassword);
+ 
