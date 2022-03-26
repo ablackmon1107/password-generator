@@ -7,7 +7,7 @@ Must have AT LEAST ONE OF THE FOLLOWING:
 3. UPPERCASE LETTERS
 4. SPECIAL CHARACTERS
 After all prompted questions are answered then a password which meets said criteria will generate on the clipboard.
-![DEMO](Assets/start.png)
-![DEMO](Assets/prompt.png)
-![DEMO](Assets/prompttwo.png)
-![DEMO](Assets/password.png)
+![DEMO](assets/start.png)
+![DEMO](assets/prompt.png)
+![DEMO](assets/prompttwo.png)
+![DEMO](assets/password.png)
